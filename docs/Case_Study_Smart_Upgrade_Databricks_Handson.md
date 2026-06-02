@@ -1,9 +1,8 @@
 # Case Study: The "Smart Upgrade" Ecosystem — Databricks Hands-On Edition
 
-**Role:** Data Engineer / Solutions Architect (candidate assessment)
+**Role:** Data Engineer / Solutions Architect 
 **Domain:** Lumera (Lumera Books Online – LBO)
 **Scale:** 5 Million Active Users (sample dataset provided)
-**Time expectation:** 1–2 days (tiered — see Deliverables)
 **Platform:** Databricks (Unity Catalog, Delta, AI/BI Dashboards, Genie, Databricks Apps)
 
 ---
@@ -114,7 +113,7 @@ Requirements: query the gold layer / a SQL warehouse (or a served model endpoint
 
 ## 4. Design & Discussion Questions (write-up — all candidates)
 
-Even if you don't build Tier 3, address these in your write-up (this preserves the Staff/Architect signal):
+Even if you don't build Tier 3, address these in your write-up:
 
 1. **Dual-velocity ingestion:** How would you handle 2B clickstream events/day vs. strict financial CDC in production? (e.g., Structured Streaming/Auto Loader + Lakeflow Declarative Pipelines; CDC via `APPLY CHANGES`.)
 2. **State & serving for <200ms inference:** How do you store and serve the Customer-360 state for real-time scoring? (Feature Store / Online Tables / Lakebase, model serving.)
@@ -123,27 +122,8 @@ Even if you don't build Tier 3, address these in your write-up (this preserves t
 
 ---
 
-## 5. Evaluation Rubric
 
-| Dimension | What we look for | Weight |
-|---|---|---|
-| **Data modeling & medallion design** | Clean Bronze/Silver/Gold, sound dimensional model, sessionization logic | 25% |
-| **Data quality handling** | Dedup, late/out-of-order, malformed-record strategy, documented assumptions | 15% |
-| **Semantic layer (Metric Views)** | Reusable, governed metric definitions feeding both dashboard & Genie | 15% |
-| **AI/BI Dashboard (Tier 1)** | Correct KPIs, answers the business question, clean UX | 15% |
-| **Genie Space (Tier 2)** | NL accuracy, curation/instructions, quality of semantic annotations | 15% |
-| **Databricks App (Tier 3)** | Functioning interactive app, latency-aware serving *(bonus — extra credit)* | +10% |
-| **Architecture & contracts write-up** | Dual-velocity, serving, feature/DS contracts, drift/SLAs | 15% |
-| **Communication** | Clear README, justified trade-offs, ability to defend decisions | (gating) |
-
-**Leveling guide:**
-- **Mid / DE:** Tier 0 + Tier 1 solid; reasonable write-up.
-- **Senior:** Tier 0–2 strong; thoughtful architecture answers.
-- **Staff / Architect:** Tier 0–2 + Tier 3 or an exceptional architecture/contracts write-up; demonstrates the three-team orchestration thinking.
-
----
-
-## 6. Submission
+## 5. Submission
 
 - A Databricks workspace (or exported notebooks/DAB project) containing the pipeline, Metric Views, dashboard, and Genie Space config.
 - A README covering assumptions, design decisions, trade-offs, and what you'd do with more time.
