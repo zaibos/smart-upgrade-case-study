@@ -1,6 +1,6 @@
 # Smart Upgrade Ecosystem — Databricks Case Study
 
-A hands-on data engineering / analytics case study for candidate assessment, built on **Databricks** (Unity Catalog, Delta, AI/BI Dashboards, Genie, Databricks Apps).
+A hands-on data engineering / analytics case study, built on **Databricks** (Unity Catalog, Delta, AI/BI Dashboards, Genie, Databricks Apps).
 
 **Scenario (fictional):** *Lumera* is a cloud accounting SaaS (*Lumera Books Online*) for SMBs. ~5% of Mid-Tier users are "Power Users" who have outgrown their plan and hit feature limits. The candidate builds the data foundation + analytics layer for a "Smart Upgrade Ecosystem" that detects this friction and surfaces a personalized upgrade offer.
 
