@@ -23,9 +23,8 @@ data/
 - **Tier 1 — AI/BI Dashboard (core):** Funnel, friction, engagement, and revenue KPIs on Unity Catalog Metric Views.
 - **Tier 2 — Genie Space (intermediate):** Natural-language Q&A on the same semantic layer.
 - **Tier 3 — Databricks App (advanced/bonus):** A "Smart Upgrade Offer Console" or friction-monitoring app.
-- **Architecture write-up:** dual-velocity ingestion, sub-200ms serving, feature/metric contracts, drift & data-quality SLAs.
 
-See [`docs/Case_Study_Smart_Upgrade_Databricks_Handson.md`](docs/Case_Study_Smart_Upgrade_Databricks_Handson.md) for full details and the evaluation rubric.
+See [`docs/Case_Study_Smart_Upgrade_Databricks_Handson.md`](docs/Case_Study_Smart_Upgrade_Databricks_Handson.md) for full details
 
 ## Using the dataset
 
